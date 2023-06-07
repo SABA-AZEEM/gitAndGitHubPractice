@@ -1,0 +1,65 @@
+		What is git?
+git is a distributed version control system.
+
+		REPOSITORY?
+Each user has a local copy of the complete history of project,called repository.
+
+		STEPS?
+1:when we type(git init) it go into working directory
+2:when we type(GIT ADD filename) then it go into staging area and track the file.
+3:when we type(GIT COMMIT -M "MESSAGE"),now local repo create
+
+		check commit?
+git log(command)
+
+		github?
+it is a code hosting platform for version control and collaboration.
+
+		how i add my local file into github remote repo 		tell me step by step?
+First, create a new repository on GitHub. You can do this by clicking on the "New" button on your GitHub homepage, or by navigating to https://github.com/new.
+
+Give your new repository a name, and optionally add a description. Make sure to choose "Public" or "Private" based on your preferences.
+
+Once you have created the repository, you will see a page with instructions on how to get started. You can ignore those instructions for now.
+
+Now, navigate to the local directory on your computer that contains the file you want to add to your GitHub repository.
+
+Open a terminal or command prompt window in that directory.
+
+Type the following command to initialize a new Git repository in that directory:
+
+git init
+
+Now, add the file you want to upload to the repository to the Git staging area using the following command:
+
+git add <file-name>
+
+Replace <file-name> with the name of the file you want to add.
+
+Commit the changes you have made using the following command:
+
+git commit -m "Initial commit"
+
+Replace "Initial commit" with a short message describing the changes you have made.
+
+Now, link your local Git repository with your GitHub remote repository using the following command:
+
+git remote add origin <remote-repository-URL>
+
+Replace <remote-repository-URL> with the URL of your GitHub remote repository. You can find this URL on your GitHub repository page.
+
+Finally, push your local changes to your remote repository on GitHub using the following command:
+
+git push -u origin master
+
+This command will upload your local files to your GitHub remote repository.
+
+
+		new changings in local file?
+we update it in remote repo by:
+1:git add filename, 
+2:git commit...,
+3:git push
+
+		Git branching?
+a branch will allow to make a copy,without affecting the original one.
